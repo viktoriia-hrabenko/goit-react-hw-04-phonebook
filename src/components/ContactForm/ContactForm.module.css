@@ -1,0 +1,34 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 350px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus,
+:hover {
+    border: none;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #A3B18A;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background-color: #344E41;
+}
