@@ -1,12 +1,7 @@
-import { Component } from 'react';
 import PropTypes from 'prop-types';
 import css from './ContactList.module.css'
 
-
-export class ContactList extends Component {
-    render() {
-        const { contacts, deleteContact } = this.props;
-        
+export const ContactList = ({ contacts, deleteContact }) => {
         return (
             <ul>
                 {contacts.map(({ id, name, number }) => {
@@ -23,9 +18,7 @@ export class ContactList extends Component {
                 })}
             </ul>
         )
-    }
 }
- 
 
 ContactList.propTypes = {
   contacts: PropTypes.arrayOf(

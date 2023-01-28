@@ -1,10 +1,6 @@
-import { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export class Filter extends Component {
-    render() {
-        const { filter, changeFilterInput } = this.props;
-
+export const Filter = ({ filter, changeFilterInput }) => {
         return (
             <label>
                 <input
@@ -15,7 +11,6 @@ export class Filter extends Component {
                 />
             </label>
         )
-    }
 }
 
 Filter.propTypes = {
